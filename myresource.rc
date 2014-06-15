@@ -1,0 +1,17 @@
+/*2012(c)Сомов Евгений Павлович*/
+#include <windows.h>
+#include "picture.h"
+
+//Ресурс: Диалоговое окно "О программе"
+ABOUTBOX DIALOG 150, 100, 171, 43
+STYLE DS_MODALFRAME | WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU
+CAPTION "Про програму."
+FONT 8, "Helv"
+{
+ CONTROL "Form_Programm", -1, "STATIC", SS_ICON | WS_CHILD | WS_VISIBLE, 3, 2, 16, 16
+ CONTROL "2012(с)Picture. Сомов Є.П.", DLG_VERFIRST, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 28, 4, 100, 8
+ CONTROL "OK", IDOK, "BUTTON", BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 116, 26, 50, 14
+}
+
+PICTURE                ICON    DISCARDABLE     "MDIPICTURE.ICO"
+
